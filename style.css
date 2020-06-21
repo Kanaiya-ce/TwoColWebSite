@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin:0px 100px;
+}
+.header{
+    background-color: #ffffff;
+}
+.header > h1 {
+     font-family: cursive;
+     font-size: 70px;
+     padding-left: 50px;
+     padding-top:10px;
+     padding-bottom:30px;
+     color:#1E92DE;
+     text-shadow: 1px 1px 2px tomato;
+}
+.main-nav > ul{
+    background-color: #292929;
+    list-style: none;
+    padding-left:30px;
+     
+}
+.main-nav > ul > li{
+    display: inline-block;
+    padding:10px;
+}
+.main-nav > ul > li > a{
+    font-family: cursive;
+    text-decoration: none;
+    font-size: 16px;
+    color: lightseagreen;
+}
+.main-nav > ul > li > a:hover{
+    color: white;
+}
+
+.content > img{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+.content{
+    background-color: white;
+    
+    min-height:530px;
+    font-size: 18px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: justify;
+    width: 80%; 
+    float: left;
+}
+.right-sidebar{
+    background-color: white;
+    min-height: 530px;
+    width:20%;
+    float:right;
+    border-left:1px solid #b3b3b3;
+}
+
+.right-sidebar > h1{
+    font-family: cursive;
+    background-color: #1E92DE;
+    text-align:center;
+    color: white;
+    padding:5px;
+    margin-top: 2px;
+    border-top-right-radius: 20px;
+}
+.right-sidebar > p{
+    font-size: 18px;
+    text-align:justify;
+    padding:10px;
+}
+.footer{
+    background-color:#292929;
+    color: lightseagreen;
+    text-align: center;
+    padding:10px;
+    font-family: cursive;
+}
+.container::after{ /* This code is used to solve problem with float while floating two element aside.*/
+    content:" ";
+    display: block;
+    clear:both;
+}
